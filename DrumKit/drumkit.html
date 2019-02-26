@@ -15,15 +15,26 @@ the number 65 responds to the letter A
 We use data-keys attributes to store custom data
 private to the app & give us the ability to
 embed custom attribute on all HTML tags-->
+
+<!--span is an inline element (used with other elements)
+and div is a block element used on seperate line-->
+
     <div class="keys">
-        <div data-key="65" class ="keys">
+        <div data-key="65" class ="key">
             <kbd>A</kbd>
+            <span class ="sound">clap</span>
+        </div>
+        <div data-key="83" class ="key">
+            <kbd>S</kbd>
+            <span class= "sound">hihat</span>
         </div>
     </div>
 
-    <script>
-    /*Will be used to listen for key code events*/
-    </script>
+
+
+<script>
+/*Will be used to listen for key code events*/
+</script>
     
 </body>
 </html>
