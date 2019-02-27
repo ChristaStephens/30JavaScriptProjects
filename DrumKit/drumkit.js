@@ -18,6 +18,8 @@ Will play the sound attached to it.*/
    * can also be read across multiple lines
    */
 window.addEventListener('keydown', function(e){
-    const audio = document.querySelector(`audio[data-key=${e.keyCode}]`);
-    console.log(audio);
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}]"`);
+    if(!audio) return; //stops function from running
+    audio.currentTime = 0; //rewinds to the start
+    audio.play();
 });
